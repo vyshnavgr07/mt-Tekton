@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+
+
+@keyframes sheep-move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1500px); 
+  }
+}
+
+.animate-sheep {
+  animation: sheep-move 3s linear forwards;
+}
