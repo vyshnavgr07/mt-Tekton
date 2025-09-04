@@ -22,15 +22,15 @@ export default function InfoModal({ isOpen, onClose }) {
               Let me <br /> catch you up
             </h2>
             <div className="flex gap-4">
-              <div className="flex flex-col space-y-2 text-purple-700 underline">
-                <a href="#" className="text-sm">Email</a>
-                <a href="#" className="text-sm">Résumé</a>
-                <a href="#" className="text-sm">LinkedIn</a>
+              <div className="flex flex-col space-y-2 text-purple-700 underline text-xs sm:text-sm leading-snug">
+                <a href="#" className="">Email</a>
+                <a href="#" className="">Résumé</a>
+                <a href="#" className="">LinkedIn</a>
               </div>
-              <div className="flex flex-col space-y-2 text-purple-700 underline">
-                <a href="#" className="text-sm">Behance</a>
-                <a href="#" className="text-sm">Instagram</a>
-                <a href="#" className="text-sm">Youtube</a>
+              <div className="flex flex-col space-y-2 text-purple-700 underline text-xs sm:text-sm leading-snug">
+                <a href="#" className="">Behance</a>
+                <a href="#" className="">Instagram</a>
+                <a href="#" className="">Youtube</a>
               </div>
             </div>
           </div>
@@ -38,8 +38,8 @@ export default function InfoModal({ isOpen, onClose }) {
         
 
           {/* Right Section */}
-          <div className="flex w-3/6 text-base leading-relaxed">
-  <div className="">
+          <div className="flex w-3/6 text-base md:leading-relaxed">
+          <div className="text-xs sm:text-sm leading-snug md:text-base  md:leading-relaxed ">
     <p>
       Right before that at <span className="text-purple-700">Apple</span> and{" "}
       <span className="text-purple-700">Figmints</span>, I worked with
@@ -57,7 +57,7 @@ export default function InfoModal({ isOpen, onClose }) {
     </p>
   </div>
 
-  <div className="text-base leading-relaxed">
+  <div className="text-xs sm:text-sm leading-snug md:text-base  md:leading-relaxed hidden md:block">
     <p>
       Right before that at <span className="text-purple-700">Apple</span> and{" "}
       <span className="text-purple-700">Figmints</span>, I worked with

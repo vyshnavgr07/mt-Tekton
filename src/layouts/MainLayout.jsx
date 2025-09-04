@@ -15,7 +15,7 @@ const [isModal,setIsmodal]=useState(false)
 
       <InfoModal isOpen={isModal} onClose={()=>setIsmodal(false)}/>
         
-      <div className="md:ml-16  relative z-0 ">
+      <div className="ml-8 md:ml-16  relative z-0 ">
 
         <div className="overflow-x-hidden">
           <Outlet />
