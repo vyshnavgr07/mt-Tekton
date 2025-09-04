@@ -82,8 +82,9 @@
 // export default Toy
 
 import React from "react";
-
+import { motion } from "framer-motion";
 const Toy = () => {
+
   return (
     <div className="w-full h-full bg-[#242b69]  ">
       {/* first */}
@@ -176,13 +177,26 @@ const Toy = () => {
 
 
      {/*third*/}
-          <div className=" md:w-full  h-auto md:h-[500px] flex justify-center  ">
+          {/* <div className=" md:w-full  h-auto md:h-[500px] flex justify-center  ">
             <img
               src="https://cdn.animaapp.com/projects/5c15b5b3a5949b000be12d9a/releases/60d3c5d455e6cd6bc1177de9/img/toy-background-image-fill-copy-2-1B271DE9-F614-4469-A34C-ADA91EC4B474.jpg"
               alt="Toy Background"
               className="object-cover w-3/4 md:w-full h-full "
             />
-          </div>
+          </div> */}
+
+
+<div className="md:w-full h-auto md:h-[500px] flex justify-center">
+  <motion.img
+    src="https://cdn.animaapp.com/projects/5c15b5b3a5949b000be12d9a/releases/60d3c5d455e6cd6bc1177de9/img/toy-background-image-fill-copy-2-1B271DE9-F614-4469-A34C-ADA91EC4B474.jpg"
+    alt="Toy Background"
+    className="object-cover w-3/4 md:w-full h-full"
+    initial={{ opacity: 0, y: 50 }}       
+    whileInView={{ opacity: 1, y: 0 }}    
+    transition={{ duration: 1, ease: "easeOut" }}
+    viewport={{ once: true, amount: 0.3 }} 
+  />
+</div>
 
   <div className="flex  w-full gap-4 md:gap-8  ">
   <img
@@ -210,13 +224,26 @@ const Toy = () => {
 
 </div>
       
-<div className="w-full md:h-[500px] flex justify-center ">
+{/* <div className="w-full md:h-[500px] flex justify-center ">
             <img
               src="https://cdn.animaapp.com/projects/5c15b5b3a5949b000be12d9a/releases/60d3c325a933b674c022f4bb/img/toy-background-image-fill-copy-18108B56-CF0D-4DA3-9D19-B35092A478A9.jpg"
               alt="Toy Background"
               className="object-cover w-3/4 md:w-full h-full "
             />
-          </div>
+          </div> */}
+
+
+          <div className="md:w-full h-auto md:h-[500px] flex justify-center">
+  <motion.img
+              src="https://cdn.animaapp.com/projects/5c15b5b3a5949b000be12d9a/releases/60d3c325a933b674c022f4bb/img/toy-background-image-fill-copy-18108B56-CF0D-4DA3-9D19-B35092A478A9.jpg"
+              alt="Toy Background"
+    className="object-cover w-3/4 md:w-full h-full"
+    initial={{ opacity: 0, y: 50 }}       
+    whileInView={{ opacity: 1, y: 0 }}    
+    transition={{ duration: 1, ease: "easeOut" }}
+    viewport={{ once: true, amount: 0.3 }} 
+  />
+</div>
 
 
           <div className="flex justify-end w-full   "> 
@@ -231,14 +258,28 @@ const Toy = () => {
   </div>
 
   </div>
-
+{/* 
  <div className="w-full md:h-[500px] flex justify-center ">
             <img
               src="https://cdn.animaapp.com/projects/5c15b5b3a5949b000be12d9a/releases/60df7bc9db574fe1519c2242/img/toy-background-image-fill-copy-DDAAC9A5-1650-4892-8187-A429CA4158A5.jpg"
               alt="Toy Background"
               className="object-cover  w-3/4  md:w-full h-full"
             />
-          </div>
+          </div> */}
+
+
+          <div className="md:w-full h-auto md:h-[500px] flex justify-center">
+  <motion.img
+              src="https://cdn.animaapp.com/projects/5c15b5b3a5949b000be12d9a/releases/60df7bc9db574fe1519c2242/img/toy-background-image-fill-copy-DDAAC9A5-1650-4892-8187-A429CA4158A5.jpg"
+              alt="Toy Background"
+    className="object-cover w-3/4 md:w-full h-full"
+    initial={{ opacity: 0, y: 50 }}       
+    whileInView={{ opacity: 1, y: 0 }}    
+    transition={{ duration: 1, ease: "easeOut" }}
+    viewport={{ once: true, amount: 0.3 }} 
+  />
+</div>
+
 
 
 
