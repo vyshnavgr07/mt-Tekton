@@ -87,7 +87,8 @@ const Toy = () => {
   return (
     <div className="w-full h-full bg-[#242b69]  ">
       {/* first */}
-      <div className="w-full h-screen ">
+
+      <div className="w-full  h-  md:h-screen  ">
         <img
           src="https://cdn.animaapp.com/projects/5c15b5b3a5949b000be12d9a/releases/60df861eb2bf67dec5162fef/img/toy-background-image-fill-B3832511-3F95-4348-A6F7-9ED5FEDFB7CC.png"
           alt="background"
@@ -96,7 +97,7 @@ const Toy = () => {
       </div>
 
       <div className="w-full flex flex-col md:justify-center  items-center py-10 ">
-        <div className="flex flex-col w-full  gap-8  md:w-5xl min-h-screen text-white px-6 md:px-16 ">
+        <div className="flex flex-col w-full  gap-8  md:w-5xl min-h-screen text-white px-4 md:px-16 ">
 
 
           <div className="flex flex-col md:flex-row w-full  min-h-screen text-white px-6 md:px-16 ">
@@ -175,15 +176,15 @@ const Toy = () => {
 
 
      {/*third*/}
-          <div className="w-full h-[500px] flex justify-center ">
+          <div className=" md:w-full  h-auto md:h-[500px] flex justify-center  ">
             <img
               src="https://cdn.animaapp.com/projects/5c15b5b3a5949b000be12d9a/releases/60d3c5d455e6cd6bc1177de9/img/toy-background-image-fill-copy-2-1B271DE9-F614-4469-A34C-ADA91EC4B474.jpg"
               alt="Toy Background"
-              className="object-cover w-full h-full"
+              className="object-cover w-3/4 md:w-full h-full "
             />
           </div>
 
-  <div className="flex w-full gap-8 ">
+  <div className="flex  w-full gap-4 md:gap-8  ">
   <img
     src="https://cdn.animaapp.com/projects/5c15b5b3a5949b000be12d9a/releases/60d3c5d455e6cd6bc1177de9/img/toy-background-image-fill-copy-2-1B271DE9-F614-4469-A34C-ADA91EC4B474.jpg"
     alt="Toy Background"
@@ -209,11 +210,11 @@ const Toy = () => {
 
 </div>
       
-<div className="w-full h-[500px] flex justify-center ">
+<div className="w-full md:h-[500px] flex justify-center ">
             <img
               src="https://cdn.animaapp.com/projects/5c15b5b3a5949b000be12d9a/releases/60d3c325a933b674c022f4bb/img/toy-background-image-fill-copy-18108B56-CF0D-4DA3-9D19-B35092A478A9.jpg"
               alt="Toy Background"
-              className="object-cover w-full h-full"
+              className="object-cover w-3/4 md:w-full h-full "
             />
           </div>
 
@@ -231,11 +232,11 @@ const Toy = () => {
 
   </div>
 
- <div className="w-full h-[500px] flex justify-center ">
+ <div className="w-full md:h-[500px] flex justify-center ">
             <img
               src="https://cdn.animaapp.com/projects/5c15b5b3a5949b000be12d9a/releases/60df7bc9db574fe1519c2242/img/toy-background-image-fill-copy-DDAAC9A5-1650-4892-8187-A429CA4158A5.jpg"
               alt="Toy Background"
-              className="object-cover w-full h-full"
+              className="object-cover  w-3/4  md:w-full h-full"
             />
           </div>
 

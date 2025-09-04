@@ -8,17 +8,17 @@ const Footer = () => {
     "city of fall river",
   ];
   return (
-    <footer className="w-full h-14  text-white flex items-center ">
+    <footer className="w-full h-8 md:h-14  text-white flex items-center  ">
 
 
-<div className=" h-full w-[200px] border bg-white  border-t-black flex justify-center items-center">
+<div className=" h-full  md:w-[200px] border bg-white  border-t-black flex justify-center items-center">
 <p className="text-lg text-black">Projects in Market</p>
 </div>
 
 
 
 
-<div className="relative w-full h-14 bg-[#003fff] overflow-hidden flex items-center">
+<div className="relative w-full h-8 md:h-14 bg-[#003fff] overflow-hidden flex items-center">
       <motion.div
         className="flex space-x-6 whitespace-nowrap"
         animate={{ x: ["100%", "-100%"] }}

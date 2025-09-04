@@ -5,9 +5,17 @@ import SheepAnimation from "../SheepAnimation";
 const section1 = () => {
   return (
     <div className="h-full p-4 md:px-8 mt-2 flex flex-col gap-4 ">
-      <div className="">
+      <div className=" ">
+        <div>
         <p className="text-3xl text-gray-400">Recently mastered the art of PowerPoint.</p>
         <p className="text-3xl">Nice to meet you, I’m Sean Lin.</p>
+        </div>
+       <div className="flex  justify-end  md:pr-15">
+
+       <p className="text-purple-700 font-semibold underline cursor-pointer">
+        Meet Sean
+      </p>
+       </div>
       </div>
       <div className="w-full flex">
  
@@ -15,26 +23,22 @@ const section1 = () => {
     <SheepAnimation />
   </div>
 
-   <div className="w-1/4  mt-18 md:mt-1  ">
+   <div className="w-1/4  mt-18 md:mt-1 flex md:flex-none  items-center md:items-start    ">
   <div className="relative flex flex-col items-center mt-1">
   
-    <div className="flex flex-col items-center mb-2">
-      <span className="text-purple-700 font-semibold underline cursor-pointer">
-        Meet Sean
-      </span>
-    </div>
+
 
 
     <img
       src="/body1.png"
       alt="Cartoon Body"
-      className="w-56   h-auto "
+      className=""
     />
 
     <img
       src="head.png"
       alt="Head"
-      className="absolute   left-1/2 top-0  w-10 md:w-17 lg:w-22      rounded-full translate-y-4 " 
+      className="absolute   left-1/2 top-0 w-10 md:w-17 lg:w-22      rounded-full translate-y-4 hover:scale-110 " 
     />
   </div>
 </div> 

@@ -14,13 +14,13 @@ const Projects = () => {
     },
     {
       id: 2,
-      image: "https://cdn.animaapp.com/projects/5c15b5b3a5949b000be12d9a/releases/60df861eb2bf67dec5162fef/img/toy-background-image-fill-B3832511-3F95-4348-A6F7-9ED5FEDFB7CC.png",
+      image: "https://cdn.animaapp.com/projects/5c15b5b3a5949b000be12d9a/releases/60b062eff613b860a238db16/img/home-image-46CBD3EE-F6E0-4005-9BF9-E1660825009C.jpg",
       title: "EcoTrack",
       description: "Track and reduce your carbon footprint",
     },
     {
       id: 3,
-      image: "https://cdn.animaapp.com/projects/5c15b5b3a5949b000be12d9a/releases/60df861eb2bf67dec5162fef/img/toy-background-image-fill-B3832511-3F95-4348-A6F7-9ED5FEDFB7CC.png",
+      image: "https://cdn.animaapp.com/projects/5c15b5b3a5949b000be12d9a/releases/60b062eff613b860a238db16/img/home-image-46CBD3EE-F6E0-4005-9BF9-E1660825009C.jpg",
       title: "FoodSaver",
       description: "Smart storage system to reduce food waste",
     },

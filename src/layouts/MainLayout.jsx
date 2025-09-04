@@ -9,13 +9,13 @@ const [isModal,setIsmodal]=useState(false)
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800 ">
    
-      <div className="fixed left-0 top-0 h-full w-16 z-50">
+      <div className="fixed left-0 top-0 h-full w-8 md:w-16 z-50">
         <Sidebar  setIsmodal={(data)=>setIsmodal(data)} />
       </div>
 
       <InfoModal isOpen={isModal} onClose={()=>setIsmodal(false)}/>
         
-      <div className="ml-16  relative z-0 ">
+      <div className="md:ml-16  relative z-0 ">
 
         <div className="overflow-x-hidden">
           <Outlet />
@@ -23,7 +23,7 @@ const [isModal,setIsmodal]=useState(false)
       </div>
 
   
-      <div className="fixed bottom-0 left-16 right-0">
+      <div className="fixed bottom-0 left-8 md:left-16 right-0">
         <Footer />
       </div>
     </div>
