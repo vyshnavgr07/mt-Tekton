@@ -1,8 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-const ProjectCard = ({ image, title, description }) => {
+const ProjectCard = ({ image, title, description,href }) => {
+  const navigate=useNavigate()
   return (
-    <div className="max-w-2xl bg-white  overflow-hidden  transform transition-transform duration-500 ease-in-out hover:scale-105 rounded-xl">
+    <div 
+    onClick={()=>navigate(href)}
+    className="
+    max-w-2xl bg-white  overflow-hidden  transform transition-transform duration-500 ease-in-out hover:scale-105">
    
       <div>
         <img

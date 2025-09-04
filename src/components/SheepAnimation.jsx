@@ -1,24 +1,49 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 const Sheep = () => {
   const [position, setPosition] = useState(0);
+  const [target, setTarget] = useState(null);
   const sheepRef = useRef(null);
+
+  useEffect(() => {
+    let animationFrame;
+
+    const moveSheep = () => {
+      if (sheepRef.current && target !== null) {
+        const sheepRect = sheepRef.current.getBoundingClientRect();
+        const sheepFront = sheepRect.left + sheepRect.width; 
+        const diff = target - sheepFront;
+
+        if (Math.abs(diff) > 2) {
+        
+          setPosition((prev) => prev + Math.sign(diff) * 3);
+          animationFrame = requestAnimationFrame(moveSheep);
+        }
+      } else if (sheepRef.current && target === null) {
+        
+        if (position !== 0) {
+          setPosition((prev) => {
+            const step = prev > 0 ? -3 : 3;
+            const next = prev + step;
+            return Math.abs(next) < 3 ? 0 : next;
+          });
+          animationFrame = requestAnimationFrame(moveSheep);
+        }
+      }
+    };
+
+    animationFrame = requestAnimationFrame(moveSheep);
+    return () => cancelAnimationFrame(animationFrame);
+  }, [target, position]);
 
   const handleMouseMove = (e) => {
     if (sheepRef.current) {
-      const rect = sheepRef.current.getBoundingClientRect();
-      const mouseX = e.clientX;
-
-      // Move left until mouse reaches sheep's back
-      if (mouseX < rect.right) {
-        setPosition((prev) => prev - 5);
-      }
+      setTarget(e.clientX); // follow mouse front
     }
   };
 
   const handleMouseLeave = () => {
-    // Smoothly go back to start
-    setPosition(0);
+    setTarget(null); // reset to original
   };
 
   return (
@@ -30,20 +55,16 @@ const Sheep = () => {
       onMouseLeave={handleMouseLeave}
       style={{
         transform: `translateX(${position}px)`,
-        transition: "transform 0.6s ease-in-out",
       }}
-      className="w-32 cursor-pointer"
+      className=" w-16  md:w-32 cursor-pointer select-none"
     />
   );
 };
 
 const SheepAnimation = () => {
   return (
-    <div className=" w-full h-[400px] flex flex-col justify-center items-center gap-20">
-      {/* Top sheep */}
+    <div className="w-full  md:h-[380px] flex flex-col justify-center items-center gap-20 overflow-hidden">
       <Sheep />
-
-      {/* Two sheep in the same row */}
       <div className="flex justify-center gap-20">
         <Sheep />
         <Sheep />

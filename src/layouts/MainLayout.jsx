@@ -7,7 +7,7 @@ import InfoModal from "../components/InfoModal";
 const MainLayout = () => {
 const [isModal,setIsmodal]=useState(false)
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-800">
+    <div className="min-h-screen bg-gray-50 text-gray-800 ">
    
       <div className="fixed left-0 top-0 h-full w-16 z-50">
         <Sidebar  setIsmodal={(data)=>setIsmodal(data)} />
@@ -17,7 +17,7 @@ const [isModal,setIsmodal]=useState(false)
         
       <div className="ml-16  relative z-0 ">
 
-        <div className="p-4 pb-20">
+        <div className="overflow-x-hidden">
           <Outlet />
         </div>
       </div>
